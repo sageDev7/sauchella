@@ -154,7 +154,8 @@ body.nav-open .mnav-ov{opacity:1;visibility:visible}
 .hitos li{padding:1.3rem 1rem 0 0}
 .hitos li+li{padding-left:1.2rem;border-left:1px solid var(--line-l)}
 .hitos b{display:block;font-family:var(--head);font-weight:400;font-size:2rem;line-height:1.1;color:var(--bronze-l);font-variant-numeric:tabular-nums}
-.hitos span{font-size:.84rem;color:var(--muted-l)}
+.hitos li>span{font-size:.84rem;color:var(--muted-l)}
+.hitos li.hito-key b{font-size:2.6rem;line-height:.95}
 .perfil-copy .link-arrow{margin-top:2.2rem}
 .faq-grid .link-arrow{margin-bottom:1.8rem}
 .cita{padding-left:1.4rem;border-left:2px solid var(--bronze);font-family:var(--head);font-style:italic;font-size:1.2rem;line-height:1.6;color:var(--bone)}
@@ -350,7 +351,9 @@ body.nav-open .mnav-ov{opacity:1;visibility:visible}
   .metodo-bg{width:100%;opacity:.15}
   .contacto::before{width:100%;opacity:.12}
   .contacto::after{background:rgba(26,21,17,.7)}
-  .perfil-foto{max-width:440px;margin:0 auto;width:calc(100% - 1.6rem)}
+  .perfil-foto{max-width:440px;margin:0 auto;width:calc(100% - 1.8rem)}
+  /* marco centrado (sin desplazamiento) cuando la foto va sola en una columna */
+  .perfil-foto::after{top:-.9rem;left:-.9rem;right:-.9rem;bottom:-.9rem}
   /* el proceso pasa a vertical */
   .proceso{display:grid;grid-template-columns:2px 1fr;gap:0 2rem;max-width:560px}
   .pr-steps{grid-column:2;grid-row:1;grid-template-columns:1fr;gap:0}
@@ -389,7 +392,8 @@ body.nav-open .mnav-ov{opacity:1;visibility:visible}
   .metodo-list li{grid-template-columns:1fr;gap:.6rem;text-align:center;padding:2rem 0}
   .hitos li,.hitos li+li{padding:1.1rem .4rem 0;text-align:center}
   .hitos b{font-size:1.5rem}
-  .hitos span{font-size:.74rem}
+  .hitos li>span{font-size:.74rem}
+  .hitos li.hito-key b{font-size:1.95rem}
   .cita{padding:1.2rem 0 0;border-left:0;border-top:2px solid var(--bronze);text-align:center}
   .faq-list summary{font-size:1.05rem;text-align:center;padding-left:1.8rem}
   .faq-list summary span{flex:1}
