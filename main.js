@@ -158,5 +158,25 @@
     if (e.key === "Escape") { setNav(false); if (modal) modal.classList.remove("show"); }
   });
 
+  // ---------- reseñas: carrusel (reseñas fijas, se actualizan a mano) ----------
+  var track = document.getElementById("resTrack");
+  function clamp(card) {
+    var p = card.querySelector("blockquote p");
+    if (p.scrollHeight - p.clientHeight < 4 || card.querySelector(".res-more")) return;
+    var b = document.createElement("button");
+    b.type = "button"; b.className = "res-more"; b.textContent = "Leer más";
+    b.addEventListener("click", function () { b.textContent = card.classList.toggle("open") ? "Leer menos" : "Leer más"; });
+    card.insertBefore(b, card.querySelector("figcaption"));
+  }
+  if (track) {
+    [].forEach.call(track.children, clamp);
+    document.querySelectorAll(".res-btn").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var c = track.querySelector(".res-card");
+        track.scrollBy({ left: (c.offsetWidth + 22) * +b.dataset.dir, behavior: reduce ? "auto" : "smooth" });
+      });
+    });
+  }
+
   document.getElementById("yr").textContent = new Date().getFullYear();
 })();
