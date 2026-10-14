@@ -165,7 +165,7 @@
     if (p.scrollHeight - p.clientHeight < 4 || card.querySelector(".res-more")) return;
     var b = document.createElement("button");
     b.type = "button"; b.className = "res-more"; b.textContent = "Leer más";
-    b.addEventListener("click", function () { b.textContent = card.classList.toggle("open") ? "Leer menos" : "Leer más"; });
+    b.addEventListener("click", function () { var abierta = card.classList.toggle("open"); b.textContent = abierta ? "Leer menos" : "Leer más"; if (!abierta) card.querySelector("blockquote p").scrollTop = 0; });
     card.insertBefore(b, card.querySelector("figcaption"));
   }
   if (track) {
