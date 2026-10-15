@@ -98,6 +98,7 @@ body.nav-open .mnav-ov{opacity:1;visibility:visible}
   linear-gradient(0deg,rgba(14,13,12,.95) 0%,transparent 42%)}
 .hero-in{display:grid;grid-template-columns:1.2fr .8fr;gap:5.5rem;align-items:center}
 .hero-h1{font-size:clamp(2.6rem,5vw,4.4rem);line-height:1.08;max-width:min(100%,15em);letter-spacing:-.015em}
+.hero-h1 em{font-size:.84em;white-space:nowrap;margin-top:.06em}
 .split-words .w{display:inline-block;opacity:0;transform:translateY(.55em);animation:wordIn 1s var(--ease) forwards}
 @keyframes wordIn{to{opacity:1;transform:none}}
 .hero-sub{margin-top:1.7rem;max-width:36rem;font-size:1.12rem;color:var(--muted-l)}
@@ -136,6 +137,7 @@ body.nav-open .mnav-ov{opacity:1;visibility:visible}
   .hero-sub,.hero-marks{margin-left:auto;margin-right:auto}
   .hero-ctas{justify-content:center}
   .hero .eyebrow,.hero-marks{justify-content:center}
+  .hero-h1 em{white-space:normal}
 }
 
 /* ---------- una sola etapa ---------- */
