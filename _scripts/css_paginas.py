@@ -102,8 +102,8 @@ RESP = r'''
   .tl-h{grid-template-columns:1fr 1fr;gap:2.4rem 2rem}
   .tl-h::before{display:none}
   .tl-h li::before{display:none}
-  .tl-h li{padding-top:2.6rem;border-top:1px solid var(--bronze)}
-  .tl-h b{top:.7rem}
+  .tl-h li{padding-top:0;border-top:1px solid var(--bronze)}
+  .tl-h b{position:static;display:block;margin:1.2rem 0 .7rem;line-height:1.2}
   .princ-list{grid-template-columns:1fr}
   .bloque,.instr-grid{grid-template-columns:1fr;gap:1.6rem}
 }
@@ -121,7 +121,7 @@ RESP = r'''
   .hitos-sec{padding:70px 0}
   .faq-page{padding:70px 0 84px}
   .tl-h{grid-template-columns:1fr;text-align:center}
-  .tl-h b{left:50%;transform:translateX(-50%)}
+  .tl-h b{transform:none}
   .princ-list li{padding:2rem 1.4rem;text-align:center}
   .cita-c{font-size:1.15rem;margin-top:3rem}
   .bloque{padding:3rem 0;text-align:center}

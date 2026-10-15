@@ -20,6 +20,7 @@ def head(title, desc, ld=None, robots=None):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="only light">
 <title>{title}</title>
 <meta name="description" content="{desc}">
 {rb}<meta name="theme-color" content="#0E0D0C">
@@ -197,7 +198,7 @@ perfil = head("Perfil profesional | Leandro Sauchella, abogado penalista",
     </div>
   </div>
 </section>
-
+''' + open("_scripts/resenas.html", encoding="utf8").read() + '''
 <!-- ============ LÍNEA DE TIEMPO ============ -->
 <section class="hitos-sec">
   <div class="wrap">
@@ -300,12 +301,6 @@ li = lambda q, a: f'      <li><details><summary><span>{q}</span><i class="ti ti-
 blk = lambda t, sub, qs: '    <div class="faq-block reveal">\n      <h2 class="faq-bt">' + t + ' <em>' + sub + '</em></h2>\n      <ul class="faq-list">\n' + "\n".join(li(q, a) for q, a in qs) + '\n      </ul>\n    </div>'
 items = "\n".join(blk(t, sub, qs) for t, sub, qs in FAQ_BLOQUES)
 faq_ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": plain(a)}} for q, a in FAQ]}
-# el index muestra 4 de estas preguntas
-ix = open("index.html", encoding="utf8").read()
-ix_items = "\n".join(li(q, a) for q, a in [FAQ[0], FAQ[1], FAQ[3], FAQ[5]])
-ix, n = _re.subn(r'(<ul class="faq-list reveal">\n).*?(\n    </ul>)', lambda m: m.group(1) + ix_items + m.group(2), ix, count=1, flags=_re.S)
-assert n == 1
-open("index.html", "w", encoding="utf8", newline="\n").write(ix)
 pf = head("Preguntas frecuentes | De la instrucción al juicio oral · Leandro Sauchella",
   "¿Estoy obligado a declarar en la indagatoria? ¿Se puede cambiar de abogado si la causa ya fue elevada a juicio? Respuestas de un abogado penalista dedicado al juicio oral.", faq_ld
   ) + header("preguntas-frecuentes.html") + "\n<main>\n" + ph("palacio", "center 35%", "Preguntas frecuentes", ("De la instrucción", "al juicio oral."),
