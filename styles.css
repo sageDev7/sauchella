@@ -580,3 +580,5 @@ body.nav-open .mnav-ov{opacity:1;visibility:visible}
 /* la barra de «Mi intervención» cubre todas las etapas (desde la elevación a juicio) */
 .pr-fill,.pr-track em{left:0}
 @media (max-width:768px){.pr-fill{top:0}}
+
+/* deploy 2026-10-21 */
