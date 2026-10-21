@@ -111,6 +111,8 @@ body.nav-open .mnav-ov{opacity:1;visibility:visible}
 .hero-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--ink) 0%,transparent 16%,transparent 72%,var(--ink) 100%)}
 .hero-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 22%;filter:sepia(.14) saturate(.88) brightness(.9);-webkit-mask-image:linear-gradient(90deg,transparent 0%,transparent 8%,rgba(0,0,0,.12) 18%,rgba(0,0,0,.35) 28%,rgba(0,0,0,.75) 42%,#000 56%);mask-image:linear-gradient(90deg,transparent 0%,transparent 8%,rgba(0,0,0,.12) 18%,rgba(0,0,0,.35) 28%,rgba(0,0,0,.75) 42%,#000 56%)}
 .hero-copy{max-width:min(41rem,56%)}
+.hero-excl{color:var(--bone);font-weight:500}
+.hero-nota{margin-top:.7rem;max-width:36rem;font-size:.95rem;color:var(--muted-l)}
 .hero-sel{margin-top:1rem;font-family:var(--head);font-style:italic;font-size:1.25rem;color:var(--bronze-l)}
 .hero .eyebrow{font-size:.95rem;letter-spacing:.26em}
 .g-bar{display:flex;align-items:center;gap:.9rem;max-width:25rem;margin-top:2.2rem;padding:.95rem 1.2rem;background:rgba(239,233,224,.04);border:1px solid var(--line-l);border-left:2px solid var(--bronze);transition:border-color .3s,background .3s}
@@ -414,6 +416,7 @@ body.nav-open .mnav-ov{opacity:1;visibility:visible}
   .hero-h1{font-size:clamp(2.2rem,10.4vw,3.1rem);max-width:none}
   .hero-h1 em{font-size:.94em;line-height:1.1;margin-top:.1em}
   .hero-sub{margin:1.3rem auto 0;font-size:1rem}
+  .hero-nota{margin:.6rem auto 0;font-size:.9rem}
   .hero-ctas{flex-direction:column;align-items:center;margin-top:2rem}
   .hero-ctas .btn{width:100%;max-width:22rem}
   .g-bar{max-width:22rem;padding:.85rem 1rem;gap:.7rem}
@@ -546,7 +549,7 @@ body.nav-open .mnav-ov{opacity:1;visibility:visible}
 .res-track::-webkit-scrollbar{display:none}
 .res-card{scroll-snap-align:start;display:flex;flex-direction:column;gap:1.2rem;padding:2.3rem 2.1rem;background:rgba(239,233,224,.03);border:1px solid var(--line-l);border-top:2px solid var(--bronze)}
 .res-stars{font-size:1rem;letter-spacing:.14em;color:var(--bronze-l)}
-.res-card blockquote{flex:1;font-family:var(--head);font-style:italic;font-size:1.08rem;line-height:1.65;color:var(--bone)}
+.res-card blockquote{flex:1;font-family:var(--head);font-style:normal;font-size:1.08rem;line-height:1.65;color:var(--bone)}
 .res-card blockquote p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:8;overflow:hidden}
 .res-card.open blockquote p{display:block;-webkit-line-clamp:unset;max-height:calc(1.08rem * 1.65 * 8);overflow-y:auto;padding-right:.6rem;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--bronze) transparent}
 .res-card.open blockquote p::-webkit-scrollbar{width:3px}

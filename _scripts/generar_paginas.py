@@ -145,7 +145,7 @@ def cta(h2, lead):
     <p class="lead">{lead}</p>
     <div class="cta-ctas">
       <a class="btn btn-bronze" href="./index.html#contacto">Enviar una consulta</a>
-      <a class="btn btn-line js-wa" href="#" data-msg="{WA_MSG}">Escribir por WhatsApp</a>
+      <a class="btn btn-wa js-wa" href="#" data-msg="{WA_MSG}">Escribir por WhatsApp</a>
     </div>
   </div>
 </section>
