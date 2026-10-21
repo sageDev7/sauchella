@@ -157,11 +157,10 @@ def page(name, html):
 
 PROCESO = '''    <div class="proceso" id="proceso">
       <ol class="pr-steps">
-        <li><span class="pr-n">01</span><h3>Etapa de instrucción</h3><p>Cierre de la investigación y medidas cautelares.</p></li>
-        <li><span class="pr-n">02</span><h3>Elevación a juicio</h3><p>Radicación de la causa ante el Tribunal Oral.</p></li>
-        <li><span class="pr-n">03</span><h3>Preparación</h3><p>Auditoría del expediente, ofrecimiento de prueba, testigos, peritos y teoría del caso.</p></li>
-        <li><span class="pr-n">04</span><h3>Juicio oral y público</h3><p>Litigación en audiencias, examen de testigos y alegatos.</p></li>
-        <li><span class="pr-n">05</span><h3>Veredicto y sentencia</h3><p>Asistencia técnica recursiva (Recurso de Casación) hasta la resolución definitiva de la causa.</p></li>
+        <li><span class="pr-n">01</span><h3>Elevación a juicio</h3><p>Radicación de la causa ante el Tribunal Oral.</p></li>
+        <li><span class="pr-n">02</span><h3>Preparación</h3><p>Auditoría del expediente, ofrecimiento de prueba, testigos, peritos y teoría del caso.</p></li>
+        <li><span class="pr-n">03</span><h3>Juicio oral y público</h3><p>Litigación en audiencias, examen de testigos y alegatos.</p></li>
+        <li><span class="pr-n">04</span><h3>Veredicto y sentencia</h3><p>Asistencia técnica recursiva (Recurso de Casación) hasta la resolución definitiva de la causa.</p></li>
       </ol>
       <div class="pr-track" aria-hidden="true"><span class="pr-fill"></span><em>Mi intervención</em></div>
     </div>'''

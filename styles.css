@@ -111,6 +111,7 @@ body.nav-open .mnav-ov{opacity:1;visibility:visible}
 .hero-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--ink) 0%,transparent 16%,transparent 72%,var(--ink) 100%)}
 .hero-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 22%;filter:sepia(.14) saturate(.88) brightness(.9);-webkit-mask-image:linear-gradient(90deg,transparent 0%,transparent 8%,rgba(0,0,0,.12) 18%,rgba(0,0,0,.35) 28%,rgba(0,0,0,.75) 42%,#000 56%);mask-image:linear-gradient(90deg,transparent 0%,transparent 8%,rgba(0,0,0,.12) 18%,rgba(0,0,0,.35) 28%,rgba(0,0,0,.75) 42%,#000 56%)}
 .hero-copy{max-width:min(41rem,56%)}
+.hero-sel{margin-top:1rem;font-family:var(--head);font-style:italic;font-size:1.25rem;color:var(--bronze-l)}
 .hero .eyebrow{font-size:.95rem;letter-spacing:.26em}
 .g-bar{display:flex;align-items:center;gap:.9rem;max-width:25rem;margin-top:2.2rem;padding:.95rem 1.2rem;background:rgba(239,233,224,.04);border:1px solid var(--line-l);border-left:2px solid var(--bronze);transition:border-color .3s,background .3s}
 .g-bar:hover{background:rgba(239,233,224,.07);border-color:rgba(168,120,76,.6)}
@@ -144,7 +145,7 @@ body.nav-open .mnav-ov{opacity:1;visibility:visible}
 /* ---------- una sola etapa ---------- */
 .etapa{position:relative;padding:140px 0;background:linear-gradient(180deg,var(--umber) 0%,var(--night) 100%)}
 .proceso{position:relative;max-width:1100px;margin:0 auto}
-.pr-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:1.4rem}
+.pr-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
 .pr-steps li{padding:0 .4rem 2.4rem;transition:opacity .6s}
 .pr-n{display:block;margin-bottom:.9rem;font-family:var(--head);font-style:italic;font-size:1.05rem;color:var(--bronze)}
 .pr-steps h3{margin-bottom:.35rem;font-size:1.35rem}
@@ -402,7 +403,7 @@ body.nav-open .mnav-ov{opacity:1;visibility:visible}
 @media (max-width:768px){
   :root{--hdr:96px}
   .wrap{padding:0 1.25rem}
-  .hdr-in{justify-content:center;position:relative}
+  .hdr-in{justify-content:flex-start;position:relative}
   .brand img{height:60px}
   .burger{position:absolute;right:.9rem;top:50%;margin:-22px 0 0}
   .eyebrow{justify-content:center;font-size:clamp(.56rem,2.75vw,.74rem);letter-spacing:.16em;gap:.6rem}
@@ -576,6 +577,6 @@ body.nav-open .mnav-ov{opacity:1;visibility:visible}
   .res-nav .link-arrow{margin:.6rem 0 0;flex-basis:100%;justify-content:center;border-bottom:0}
 }
 
-/* la barra de «Mi intervención» cubre las 5 etapas (el cliente pidió no excluir la instrucción) */
+/* la barra de «Mi intervención» cubre todas las etapas (desde la elevación a juicio) */
 .pr-fill,.pr-track em{left:0}
 @media (max-width:768px){.pr-fill{top:0}}
